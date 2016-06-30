@@ -3,7 +3,7 @@ package com.sirma.dao;
 
 import java.util.List;
 
-public interface Controller<E, K> {
+public interface FactorsDAO<E, K> {
     List<E> getAll();
 
     E update(E entity);

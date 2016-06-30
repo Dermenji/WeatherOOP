@@ -1,12 +1,12 @@
 package com.sirma.services;
 
-import com.sirma.dao.Controller;
+import com.sirma.dao.FactorsDAO;
 import com.sirma.items.City;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FactorsService implements Controller {
+public class FactorsService implements FactorsDAO {
     private ArrayList<City> cityArrayList = new ArrayList<City>();
 
     public FactorsService() {
