@@ -3,11 +3,11 @@ package com.sirma.objectmodel;
 
 public class WindSpeed extends Measurements {
     private int value;
-    private Unit type;
+    private static String unit = Units.M_SEK.value();
 
-    public WindSpeed(int value, Unit type) {
+    public WindSpeed(int value, String type) {
         this.value = value;
-        this.type = type;
+        this.unit = type;
     }
 
     public int getValue() {
@@ -18,19 +18,19 @@ public class WindSpeed extends Measurements {
         this.value = value;
     }
 
-    public Unit getType() {
-        return type;
+    public String getType() {
+        return unit;
     }
 
-    public void setType(Unit type) {
-        this.type = type;
+    public void setType(Units type) {
+        this.unit = unit;
     }
 
     @Override
     public String toString() {
         return "WindSpeed{" +
                 "value=" + value +
-                ", type='" + type + '\'' +
+                ", type='" + unit + '\'' +
                 '}';
     }
 }

@@ -2,11 +2,11 @@ package com.sirma.objectmodel;
 
 public class Temperature extends Measurements {
     private int value;
-    private Unit type;
+    private static String unit = Units.TEMP.value();
 
-    public Temperature(int value, Unit type) {
+    public Temperature(int value, String unit) {
         this.value = value;
-        this.type = type;
+        this.unit = unit;
     }
 
     public int getValue() {
@@ -17,19 +17,19 @@ public class Temperature extends Measurements {
         this.value = value;
     }
 
-    public Unit getType() {
-        return type;
+    public String getType() {
+        return unit;
     }
 
-    public void setType(Unit type) {
-        this.type = type;
+    public void setType(Units type) {
+        this.unit = unit;
     }
 
     @Override
     public String toString() {
         return "Temperature{" +
                 "value=" + value +
-                ", type='" + type + '\'' +
+                ", type='" + unit + '\'' +
                 '}';
     }
 }
