@@ -1,11 +1,11 @@
-package com.sirma.items;
+package com.sirma.objectmodel;
 
 
-public class WindSpeed {
+public class WindSpeed extends Measurements {
     private int value;
-    private String type;
+    private Unit type;
 
-    public WindSpeed(int value, String type) {
+    public WindSpeed(int value, Unit type) {
         this.value = value;
         this.type = type;
     }
@@ -18,11 +18,11 @@ public class WindSpeed {
         this.value = value;
     }
 
-    public String getType() {
+    public Unit getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(Unit type) {
         this.type = type;
     }
 

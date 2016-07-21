@@ -1,7 +1,7 @@
 package com.sirma.services;
 
 import com.sirma.dao.FactorsDAO;
-import com.sirma.items.City;
+import com.sirma.objectmodel.City;
 
 import java.util.ArrayList;
 import java.util.List;
