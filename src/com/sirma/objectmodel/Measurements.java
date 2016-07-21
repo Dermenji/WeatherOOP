@@ -11,4 +11,5 @@ public abstract class Measurements {
     private Temperature temp;
     private AirHumidity airHumidity;
     private WindSpeed windSpeed;
+    private WindDirection windDirection;
 }
