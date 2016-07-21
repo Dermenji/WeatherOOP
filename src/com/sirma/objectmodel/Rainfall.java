@@ -3,11 +3,10 @@ package com.sirma.objectmodel;
 
 public class Rainfall extends Measurements {
     private int value;
-    private static String unit = Units.MM_KVM.value();
+    private final static String unit = Units.MM_KVM.value();
 
     public Rainfall(int value, String type) {
         this.value = value;
-        this.unit = unit;
     }
 
     public int getValue() {
@@ -18,13 +17,10 @@ public class Rainfall extends Measurements {
         this.value = value;
     }
 
-    public String getType() {
+    public String getUnit() {
         return unit;
     }
 
-    public void setType(Units type) {
-        this.unit = unit;
-    }
 
     @Override
     public String toString() {
