@@ -1,20 +1,20 @@
 package com.sirma.services;
 
-import com.sirma.dao.FactorsDAO;
-import com.sirma.objectmodel.City;
+import com.sirma.dao.MeasurmentsDAO;
+import com.sirma.objectmodel.Measurements;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FactorsService implements FactorsDAO {
-    private ArrayList<City> cityArrayList = new ArrayList<City>();
+public class MeasurmentsService implements MeasurmentsDAO {
+    private ArrayList<Measurements> measurmentsArrayList = new ArrayList<Measurements>();
 
-    public FactorsService() {
+    public MeasurmentsService() {
 
     }
 
     public List getAll() {
-        return cityArrayList;
+        return measurmentsArrayList;
     }
 
     public Object update(Object entity) {
@@ -25,16 +25,8 @@ public class FactorsService implements FactorsDAO {
         return null;
     }
 
-    public Object getEntityById(Object id) {
-        return null;
-    }
-
     public Object getByName(Object name) {
         return null;
-    }
-
-    public boolean remove(Object id) {
-        return false;
     }
 
     public boolean create(Object entity) {
