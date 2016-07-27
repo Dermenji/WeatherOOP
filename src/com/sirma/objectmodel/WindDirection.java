@@ -1,35 +1,18 @@
 package com.sirma.objectmodel;
 
-public class WindDirection extends Measurements {
-    private int value;
-    private Units unit;
+public enum WindDirection {
+    NORTH("север"),
+    EAST("изток"),
+    WEST("запад"),
+    SOUTH("юг");
 
-    public WindDirection(int value, Units type) {
-        this.value = value;
-        this.unit = unit;
+    private String direction;
+
+    WindDirection(String direction) {
+        this.direction = direction;
     }
 
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
-    }
-
-    public Units getType() {
-        return unit;
-    }
-
-    public void setType(Units type) {
-        this.unit = unit;
-    }
-
-    @Override
-    public String toString() {
-        return "WindDirection{" +
-                "value=" + value +
-                ", type='" + unit + '\'' +
-                '}';
+    public String value() {
+        return direction;
     }
 }
