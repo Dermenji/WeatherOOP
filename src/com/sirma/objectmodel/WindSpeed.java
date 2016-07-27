@@ -3,7 +3,7 @@ package com.sirma.objectmodel;
 
 public class WindSpeed extends Measurements {
     private int value;
-    private final static String unit = Units.M_SEK.value();
+    private final static String unit = Units.WIND.value();
 
     public WindSpeed(int value, String type) {
         this.value = value;

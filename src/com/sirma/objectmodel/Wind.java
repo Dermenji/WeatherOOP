@@ -11,7 +11,7 @@ public class Wind extends Measurements {
         this.direction = direction;
     }
 
-    public static String getUNIT() {
+    public static String getUnit() {
         return unit;
     }
 
