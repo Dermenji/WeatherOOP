@@ -10,7 +10,7 @@ public abstract class Measurements {
     private Temperature temp;
     private AirHumidity airHumidity;
     private WindSpeed windSpeed;
-    private WindDirection windDirection;
+    private Wind wind;
 
     public Date getDate() {
         return date;
@@ -60,12 +60,12 @@ public abstract class Measurements {
         this.airHumidity = airHumidity;
     }
 
-    public WindDirection getWindDirection() {
-        return windDirection;
+    public Wind getWindDirection() {
+        return wind;
     }
 
-    public void setWindDirection(WindDirection windDirection) {
-        this.windDirection = windDirection;
+    public void setWindDirection(Wind wind) {
+        this.wind = wind;
     }
 
     @Override
@@ -77,7 +77,7 @@ public abstract class Measurements {
                 ", temp=" + temp +
                 ", airHumidity=" + airHumidity +
                 ", windSpeed=" + windSpeed +
-                ", windDirection=" + windDirection +
+                ", windDirection=" + wind +
                 '}';
     }
 }
