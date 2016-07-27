@@ -1,7 +1,7 @@
 package com.sirma.objectmodel;
 
 public class Wind extends Measurements {
-    private static final String UNIT = Units.WIND.value();
+    private static final String unit = Units.WIND.value();
 
     private String value;
     private WindDirection direction;
@@ -12,7 +12,7 @@ public class Wind extends Measurements {
     }
 
     public static String getUNIT() {
-        return UNIT;
+        return unit;
     }
 
     public String getValue() {
@@ -33,7 +33,7 @@ public class Wind extends Measurements {
 
     public String toString() {
         return "Вятър: " +
-                "скорост " + this.value + " " + UNIT + ", " +
+                "скорост " + this.value + " " + unit + ", " +
                 "направление " + this.direction.value();
     }
 }
