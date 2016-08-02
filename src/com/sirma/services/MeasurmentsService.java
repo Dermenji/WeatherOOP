@@ -1,19 +1,19 @@
 package com.sirma.services;
 
 import com.sirma.dao.MeasurmentsDAO;
-import com.sirma.objectmodel.Measurements;
+import com.sirma.dto.MeasurmentsDTO;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MeasurmentsService implements MeasurmentsDAO {
-    private ArrayList<Measurements> measurmentsArrayList = new ArrayList<Measurements>();
+    private ArrayList<MeasurmentsDTO> measurmentsArrayList = new ArrayList<MeasurmentsDTO>();
 
     public MeasurmentsService() {
 
     }
 
-    public List getAll() {
+   /* public List getAll() {
         return measurmentsArrayList;
     }
 
@@ -31,5 +31,25 @@ public class MeasurmentsService implements MeasurmentsDAO {
 
     public boolean create(Object entity) {
         return false;
+    }*/
+
+    @Override
+    public List<MeasurmentsDTO> getAll() {
+        return measurmentsArrayList;
+    }
+
+    @Override
+    public MeasurmentsDTO update(MeasurmentsDTO entity) {
+        return null;
+    }
+
+    @Override
+    public MeasurmentsDTO add(MeasurmentsDTO entity) {
+        return null;
+    }
+
+    @Override
+    public MeasurmentsDTO getByName(MeasurmentsDTO name) {
+        return null;
     }
 }
