@@ -1,9 +1,8 @@
 package com.sirma.dao;
 
 import com.sirma.dto.MeasurmentsDTO;
-import com.sirma.objectmodel.Measurements;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface MeasurmentsDAO {
    /* List<E> getAll();
@@ -16,7 +15,7 @@ public interface MeasurmentsDAO {
 
     boolean create(E entity);*/
 
-    ArrayList<Measurements> detAll();
+    List<MeasurmentsDTO> getAll();
 
     MeasurmentsDTO update(MeasurmentsDTO entity);
 
