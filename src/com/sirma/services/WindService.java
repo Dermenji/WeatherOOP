@@ -1,28 +1,49 @@
 package com.sirma.services;
 
 
-import com.sirma.dao.WindDAO;
+import com.sirma.dao.AbstractController;
 import com.sirma.dto.WindDTO;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class WindService implements WindDAO {
+public class WindService extends AbstractController {
 
     private ArrayList<WindDTO> windArrayList = new ArrayList<WindDTO>();
 
+
     @Override
-    public List<WindDTO> getAll() {
+    public List getAll() {
         return windArrayList;
     }
 
     @Override
-    public void addWind(WindDTO wind) {
-
+    public Object update(Object entity) {
+        return null;
     }
 
     @Override
-    public void deleteWind(WindDTO wind) {
+    public Object add(Object entity) {
+        return null;
+    }
 
+    @Override
+    public Object getEntityById(Object id) {
+        return null;
+    }
+
+    @Override
+    public Object getByName(Object name) {
+        return null;
+    }
+
+    @Override
+    public boolean remove(Object id) {
+        return false;
+    }
+
+    @Override
+    public boolean create(Object entity) {
+        return false;
     }
 }

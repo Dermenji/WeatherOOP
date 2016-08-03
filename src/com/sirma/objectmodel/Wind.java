@@ -1,25 +1,28 @@
 package com.sirma.objectmodel;
 
-public class Wind extends Measurements {
+import com.sirma.dto.WindDTO;
+
+public class Wind extends Measurements implements WindDTO {
     private static final String unit = Units.WIND.value();
 
-    private String value;
+    private int value;
     private WindDirection direction;
 
-    Wind(String value, WindDirection direction) {
+    Wind(int value, WindDirection direction) {
         this.value = value;
         this.direction = direction;
     }
 
-    public static String getUnit() {
+    public String getUnit() {
         return unit;
     }
 
-    public String getValue() {
+    public int getValue() {
         return value;
     }
 
-    public void setValue(String value) {
+
+    public void setValue(int value) {
         this.value = value;
     }
 

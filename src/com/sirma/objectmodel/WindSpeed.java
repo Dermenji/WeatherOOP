@@ -1,7 +1,9 @@
 package com.sirma.objectmodel;
 
 
-public class WindSpeed extends Measurements {
+import com.sirma.dto.MainDTO;
+
+public class WindSpeed extends Measurements implements MainDTO {
     private int value;
     private final static String unit = Units.WIND.value();
 

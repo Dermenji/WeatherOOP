@@ -1,7 +1,6 @@
 package com.sirma.dto;
 
-
-public interface RainfallDTO {
+public interface MainDTO {
     String getUnit();
 
     int getValue();

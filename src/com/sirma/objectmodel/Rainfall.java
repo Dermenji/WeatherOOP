@@ -1,7 +1,9 @@
 package com.sirma.objectmodel;
 
 
-public class Rainfall extends Measurements {
+import com.sirma.dto.MainDTO;
+
+public class Rainfall extends Measurements implements MainDTO {
     private int value;
     private final static String unit = Units.MM_KVM.value();
 

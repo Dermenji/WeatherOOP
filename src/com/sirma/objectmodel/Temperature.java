@@ -1,6 +1,8 @@
 package com.sirma.objectmodel;
 
-public class Temperature extends Measurements {
+import com.sirma.dto.MainDTO;
+
+public class Temperature extends Measurements implements MainDTO {
     private int value;
     private final static String unit = Units.TEMP.value();
 

@@ -1,8 +1,10 @@
 package com.sirma.objectmodel;
 
+import com.sirma.dto.MeasurmentsDTO;
+
 import java.util.Date;
 
-public abstract class Measurements {
+public abstract class Measurements implements MeasurmentsDTO{
 
     private Date date;
     private City city;

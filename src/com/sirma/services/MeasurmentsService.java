@@ -1,19 +1,20 @@
 package com.sirma.services;
 
-import com.sirma.dao.MeasurmentsDAO;
+
+import com.sirma.dao.AbstractController;
 import com.sirma.dto.MeasurmentsDTO;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MeasurmentsService implements MeasurmentsDAO {
+public class MeasurmentsService extends AbstractController {
     private ArrayList<MeasurmentsDTO> measurmentsArrayList = new ArrayList<MeasurmentsDTO>();
 
     public MeasurmentsService() {
 
     }
 
-   /* public List getAll() {
+    public List getAll() {
         return measurmentsArrayList;
     }
 
@@ -25,31 +26,19 @@ public class MeasurmentsService implements MeasurmentsDAO {
         return null;
     }
 
+    public Object getEntityById(Object id) {
+        return null;
+    }
+
     public Object getByName(Object name) {
         return null;
     }
 
+    public boolean remove(Object id) {
+        return false;
+    }
+
     public boolean create(Object entity) {
         return false;
-    }*/
-
-    @Override
-    public List<MeasurmentsDTO> getAll() {
-        return measurmentsArrayList;
-    }
-
-    @Override
-    public MeasurmentsDTO update(MeasurmentsDTO entity) {
-        return null;
-    }
-
-    @Override
-    public MeasurmentsDTO add(MeasurmentsDTO entity) {
-        return null;
-    }
-
-    @Override
-    public MeasurmentsDTO getByName(MeasurmentsDTO name) {
-        return null;
     }
 }

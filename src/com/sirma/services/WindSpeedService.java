@@ -6,15 +6,14 @@ import com.sirma.dto.MainDTO;
 import java.util.ArrayList;
 import java.util.List;
 
+public class WindSpeedService extends AbstractController {
 
-public class TemperatureService extends AbstractController {
-
-    private ArrayList<MainDTO> temperatureArrayList = new ArrayList<MainDTO>();
+    private ArrayList<MainDTO> windSpeedArrayList = new ArrayList<MainDTO>();
 
 
     @Override
     public List getAll() {
-        return temperatureArrayList;
+        return windSpeedArrayList;
     }
 
     @Override

@@ -1,7 +1,9 @@
 package com.sirma.objectmodel;
 
 
-public class AirHumidity extends Measurements {
+import com.sirma.dto.MainDTO;
+
+public class AirHumidity extends Measurements implements MainDTO {
     private int value;
     private final static String unit = Units.PERCENT.value();
 
@@ -9,7 +11,7 @@ public class AirHumidity extends Measurements {
         this.value = value;
     }
 
-    public static String getUnit() {
+    public String getUnit() {
         return unit;
     }
 

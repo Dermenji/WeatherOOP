@@ -1,7 +1,9 @@
 package com.sirma.objectmodel;
 
 
-public class City extends Measurements {
+import com.sirma.dto.CityDTO;
+
+public class City extends Measurements implements CityDTO {
     private String name;
 
     public String getName() {

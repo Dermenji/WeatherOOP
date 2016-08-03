@@ -3,12 +3,7 @@ package com.sirma.dto;
 
 import com.sirma.objectmodel.WindDirection;
 
-public interface WindDTO {
-    String getUnit();
-
-    String getValue();
-
-    void setValue(String value);
+public interface WindDTO extends MainDTO {
 
     WindDirection getDirection();
 

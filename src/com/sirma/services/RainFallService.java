@@ -1,29 +1,50 @@
 package com.sirma.services;
 
-import com.sirma.dao.RainfallDAO;
-import com.sirma.dto.RainfallDTO;
+import com.sirma.dao.AbstractController;
+import com.sirma.dto.MainDTO;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class RainFallService implements RainfallDAO {
-    private ArrayList<RainfallDTO> rainfallArrayList = new ArrayList<RainfallDTO>();
+public class RainFallService extends AbstractController {
+    private ArrayList<MainDTO> rainfallArrayList = new ArrayList<MainDTO>();
 
     public RainFallService() {
 
     }
 
     @Override
-    public ArrayList<RainfallDTO> getAll() {
+    public List getAll() {
         return rainfallArrayList;
     }
 
     @Override
-    public void addRainfall(RainfallDTO rainfall) {
-
+    public Object update(Object entity) {
+        return null;
     }
 
     @Override
-    public void deleteRainfall(RainfallDTO rainfall) {
+    public Object add(Object entity) {
+        return null;
+    }
 
+    @Override
+    public Object getEntityById(Object id) {
+        return null;
+    }
+
+    @Override
+    public Object getByName(Object name) {
+        return null;
+    }
+
+    @Override
+    public boolean remove(Object id) {
+        return false;
+    }
+
+    @Override
+    public boolean create(Object entity) {
+        return false;
     }
 }

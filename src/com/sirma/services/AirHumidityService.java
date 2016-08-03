@@ -1,31 +1,51 @@
 package com.sirma.services;
 
 
-import com.sirma.dao.AirHumidityDAO;
-import com.sirma.dto.AirHumidityDTO;
+import com.sirma.dao.AbstractController;
+import com.sirma.dto.MainDTO;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class AirHumidityService implements AirHumidityDAO {
-
-    private ArrayList<AirHumidityDTO> airHumidityArrayList = new ArrayList<AirHumidityDTO>();
+public class AirHumidityService extends AbstractController {
+    private ArrayList<MainDTO> airArrayList = new ArrayList<MainDTO>();
 
     public AirHumidityService() {
 
     }
 
     @Override
-    public ArrayList<AirHumidityDTO> getAll() {
-        return airHumidityArrayList;
+    public List getAll() {
+        return null;
     }
 
     @Override
-    public void addAirHumidity(AirHumidityDTO airHumidity) {
-
+    public Object update(Object entity) {
+        return null;
     }
 
     @Override
-    public void deleteAirHumidity(AirHumidityDTO airHumidity) {
+    public Object add(Object entity) {
+        return null;
+    }
 
+    @Override
+    public Object getEntityById(Object id) {
+        return null;
+    }
+
+    @Override
+    public Object getByName(Object name) {
+        return null;
+    }
+
+    @Override
+    public boolean remove(Object id) {
+        return false;
+    }
+
+    @Override
+    public boolean create(Object entity) {
+        return false;
     }
 }
