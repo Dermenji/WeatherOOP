@@ -2,6 +2,7 @@ package com.sirma.services;
 
 import com.sirma.dao.AbstractController;
 import com.sirma.dto.MainDTO;
+import com.sirma.objectmodel.Temperature;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
 
 public class TemperatureService extends AbstractController {
 
-    private ArrayList<MainDTO> temperatureArrayList = new ArrayList<MainDTO>();
+    private ArrayList<Temperature> temperatureArrayList = new ArrayList<Temperature>();
 
 
     @Override

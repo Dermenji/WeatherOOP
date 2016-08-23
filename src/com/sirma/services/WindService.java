@@ -3,13 +3,14 @@ package com.sirma.services;
 
 import com.sirma.dao.AbstractController;
 import com.sirma.dto.WindDTO;
+import com.sirma.objectmodel.Wind;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class WindService extends AbstractController {
 
-    private ArrayList<WindDTO> windArrayList = new ArrayList<WindDTO>();
+    private ArrayList<Wind> windArrayList = new ArrayList<Wind>();
 
 
     @Override

@@ -2,13 +2,14 @@ package com.sirma.services;
 
 import com.sirma.dao.AbstractController;
 import com.sirma.dto.CityDTO;
+import com.sirma.objectmodel.City;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CityService extends AbstractController {
 
-    private ArrayList<CityDTO> cityArrayList = new ArrayList<CityDTO>();
+    private ArrayList<City> cityArrayList = new ArrayList<City>();
 
     public CityService() {
 

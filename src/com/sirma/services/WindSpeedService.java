@@ -2,13 +2,14 @@ package com.sirma.services;
 
 import com.sirma.dao.AbstractController;
 import com.sirma.dto.MainDTO;
+import com.sirma.objectmodel.WindSpeed;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class WindSpeedService extends AbstractController {
 
-    private ArrayList<MainDTO> windSpeedArrayList = new ArrayList<MainDTO>();
+    private ArrayList<WindSpeed> windSpeedArrayList = new ArrayList<WindSpeed>();
 
 
     @Override

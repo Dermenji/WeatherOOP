@@ -3,12 +3,13 @@ package com.sirma.services;
 
 import com.sirma.dao.AbstractController;
 import com.sirma.dto.MainDTO;
+import com.sirma.objectmodel.AirHumidity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class AirHumidityService extends AbstractController {
-    private ArrayList<MainDTO> airArrayList = new ArrayList<MainDTO>();
+    private ArrayList<AirHumidity> airArrayList = new ArrayList<AirHumidity>();
 
     public AirHumidityService() {
 

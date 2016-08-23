@@ -2,12 +2,13 @@ package com.sirma.services;
 
 import com.sirma.dao.AbstractController;
 import com.sirma.dto.MainDTO;
+import com.sirma.objectmodel.Rainfall;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class RainFallService extends AbstractController {
-    private ArrayList<MainDTO> rainfallArrayList = new ArrayList<MainDTO>();
+    private ArrayList<Rainfall> rainfallArrayList = new ArrayList<Rainfall>();
 
     public RainFallService() {
 

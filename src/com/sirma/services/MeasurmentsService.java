@@ -3,12 +3,13 @@ package com.sirma.services;
 
 import com.sirma.dao.AbstractController;
 import com.sirma.dto.MeasurmentsDTO;
+import com.sirma.objectmodel.Measurements;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MeasurmentsService extends AbstractController {
-    private ArrayList<MeasurmentsDTO> measurmentsArrayList = new ArrayList<MeasurmentsDTO>();
+    private ArrayList<Measurements> measurmentsArrayList = new ArrayList<Measurements>();
 
     public MeasurmentsService() {
 
